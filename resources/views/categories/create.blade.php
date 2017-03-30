@@ -14,7 +14,7 @@
                 <div class="row">
                     {!! Form::open(['route' => 'categories.store']) !!}
 
-                        @include('categories.fields')
+                        @include('categories.partials.fields')
 
                     {!! Form::close() !!}
                 </div>

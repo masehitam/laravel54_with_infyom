@@ -123,6 +123,8 @@
                     <!-- Authentication Links -->
                     <li><a href="{!! url('/login') !!}">Login</a></li>
                     <li><a href="{!! url('/register') !!}">Register</a></li>
+	                <li><a href="{!! url('/categories') !!}">Categories</a></li>
+	                <li><a href="{!! url('/products') !!}">Products</a></li>
                 </ul>
             </div>
         </div>

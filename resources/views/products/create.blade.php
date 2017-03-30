@@ -14,7 +14,7 @@
                 <div class="row">
                     {!! Form::open(['route' => 'products.store', 'enctype' => 'multipart/form-data']) !!}
 
-                        @include('products.fields')
+                        @include('products.partials.fields')
 
                     {!! Form::close() !!}
                 </div>

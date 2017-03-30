@@ -13,7 +13,7 @@
                <div class="row">
                    {!! Form::model($product, ['route' => ['products.update', $product->id], 'method' => 'patch', 'enctype' => 'multipart/form-data']) !!}
 
-                        @include('products.fields')
+                        @include('products.partials.fields')
 
                    {!! Form::close() !!}
                </div>

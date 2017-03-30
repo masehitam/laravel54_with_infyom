@@ -1,7 +1,7 @@
 <table class="table table-responsive" id="products-table">
     <thead>
         <th>Name</th>
-        <th>Category Id</th>
+        <th>Category</th>
         <th>Picture</th>
         <th colspan="3">Action</th>
     </thead>

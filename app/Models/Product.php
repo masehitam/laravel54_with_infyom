@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Traits\IdTrait;
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -12,7 +13,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Product extends Model
 {
-    use SoftDeletes;
+    use SoftDeletes, IdTrait;
 
     const BASE_PATH = 'uploads/productImages';
 
@@ -34,6 +35,7 @@ class Product extends Model
      * @var array
      */
     protected $casts = [
+    	'id' => 'string',
         'name' => 'string',
         'picture' => 'string'
     ];
@@ -45,7 +47,7 @@ class Product extends Model
      */
     public static $rules = [
         'name' => 'required|min:3|max:35',
-        'category_id' => 'required|numeric'
+        'category_id' => 'required'
     ];
 
 	public function category() {

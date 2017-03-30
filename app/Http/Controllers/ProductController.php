@@ -54,7 +54,7 @@ class ProductController extends AppBaseController
     {
 	    $categories = $this->categoryRepository->pluck('name', 'id');
         return view('products.create')
-	            ->with('selectedCategory', 4)
+	            ->with('selectedCategory', '')
 	            ->with('categories', $categories);
     }
 

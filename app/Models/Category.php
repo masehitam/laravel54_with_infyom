@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Traits\IdTrait;
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -12,7 +13,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Category extends Model
 {
-    use SoftDeletes;
+    use SoftDeletes, IdTrait;
 
     public $table = 'categories';
 
@@ -30,6 +31,7 @@ class Category extends Model
      * @var array
      */
     protected $casts = [
+        'id' => 'string',
         'name' => 'string'
     ];
 

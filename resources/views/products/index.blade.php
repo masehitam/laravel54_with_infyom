@@ -15,7 +15,7 @@
         <div class="clearfix"></div>
         <div class="box box-primary">
             <div class="box-body">
-                    @include('products.table')
+                    @include('products.partials.table')
             </div>
         </div>
     </div>
