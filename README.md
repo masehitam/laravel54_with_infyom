@@ -28,3 +28,18 @@ Implemented Features
 	* app/Utility/FileUtility.php
 
 	* public/js/custom.js
+
+* Integrate CKEditor with File Manager
+
+	* Run some commands:
+		- php artisan cache:clear
+		- php artisan config:clear
+		- composer dump-autoload
+		- php artisan vendor:publish --tag=ckeditor-assets
+		- php artisan vendor:publish --tag=lfm_config
+    - php artisan vendor:publish --tag=lfm_public
+    - php artisan migrate:refresh --seed
+    
+	* We have to login in order to perform the upload function
+		- username (email): root@example.com
+		- password        : root

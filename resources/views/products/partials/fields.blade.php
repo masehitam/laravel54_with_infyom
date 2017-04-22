@@ -27,6 +27,12 @@
 	@endif
 </div>
 
+<!-- Category Id Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('description', 'Description:') !!}
+    <textarea name="description" class="form-control textarea-aloha"></textarea>
+</div>
+
 
 <div class="clearfix"></div>
 

@@ -26,7 +26,8 @@ class Product extends Model
     public $fillable = [
         'name',
         'category_id',
-        'picture'
+        'picture',
+		'description'
     ];
 
     /**

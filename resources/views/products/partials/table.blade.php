@@ -16,6 +16,9 @@
 	            @endif
             </td>
             <td>
+                {!! $product->description !!}
+            </td>
+            <td>
                 {!! Form::open(['route' => ['products.destroy', $product->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>
                     <a href="{!! route('products.show', [$product->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
